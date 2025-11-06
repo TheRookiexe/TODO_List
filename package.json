@@ -1,0 +1,24 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "A minimal Webpack 5 template for JavaScript projects.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": ["webpack", "template", "frontend", "starter"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1",
+    "html-webpack-plugin": "^5.6.4",
+    "style-loader": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0"
+  }
+}
