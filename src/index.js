@@ -1,3 +1,6 @@
 import "./style.css";
 
-console.log('test');
+const contentDiv = document.getElementById('content');
+const sideBarDiv = document.getElementById('sideBar');
+
+
