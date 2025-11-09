@@ -133,7 +133,7 @@ dialog::backdrop {
     font-weight: bold;
 }
 
-.project-item {
+.prSh {
     font-weight: bold;
     font-size: 20px;
     color: whitesmoke;
@@ -141,6 +141,10 @@ dialog::backdrop {
     width: 200px;
     margin: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .todo-item {
@@ -148,4 +152,17 @@ dialog::backdrop {
     color: white;
     font-size: 20px;
     margin: 10px;
+    padding: 20px;
+}
+
+#del-btn {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#del-btn:active {
+    background-color: red;
 }

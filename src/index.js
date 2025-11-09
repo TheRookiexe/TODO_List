@@ -14,10 +14,26 @@ function renderProjects() {
 
   const projects = storage.getAllProjects();
   Object.keys(projects).forEach(name => {
+
+    const projSh = document.createElement('div');
+    projSh.classList.add('prSh');
+
     const p = document.createElement('div');
     p.textContent = `📁 ${name}`;
     p.classList.add('project-item');
-    sideBarDiv.appendChild(p);
+
+    const delBtn = document.createElement('button');
+    delBtn.textContent=`🗑️`;
+    delBtn.id = "del-btn";
+
+    delBtn.addEventListener('click', ()=>{
+      storage.deleteProject(name);
+      delBtn.parentElement.remove();
+    })
+
+    projSh.appendChild(p);
+    projSh.appendChild(delBtn);
+    sideBarDiv.appendChild(projSh);
 
     p.addEventListener('click', () => {
       renderProjectContent(name);
