@@ -42,9 +42,11 @@ body {
 
 #content {
     grid-area: 2 / 2 / 4 / 4;
+    padding: 20px;
+    margin: 10px;
 }
 
-#addProjBtn {
+#addProjBtn , #addTodoBtn {
     height: 60px;
     width: 340px;
     border: none;
@@ -129,5 +131,21 @@ dialog::backdrop {
     width: 150px;
     font-size: 20px;
     font-weight: bold;
-    /* margin-bottom: 20px; */
+}
+
+.project-item {
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: #091e35;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.todo-item {
+    background-color: #091e35;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
 }
