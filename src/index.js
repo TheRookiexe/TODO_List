@@ -1,7 +1,7 @@
 import "./style.css";
 import { ProjectDiaBox } from "./components/projDialogBox";
 import { LocalStorageMgr } from "./components/localStorageMgr";
-import { Todo, ProjectCreate } from "./components/ProjectCreate"; 
+import { Todo } from "./components/ProjectCreate"; 
 
 const sideBarDiv = document.getElementById('sideBar');
 const contentDiv = document.getElementById('content');
