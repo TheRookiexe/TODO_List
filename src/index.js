@@ -1,4 +1,5 @@
 import "./style.css";
+import { projDiaBox } from "./components/projDialogBox";
 
 const contentDiv = document.getElementById('content');
 const sideBarDiv = document.getElementById('sideBar');
@@ -11,3 +12,5 @@ sideBarDiv.appendChild(addProjectBtn);
 const barDiv = document.createElement('div');
 barDiv.id = "divisor";
 sideBarDiv.appendChild(barDiv);
+
+addProjectBtn.addEventListener('click', ()=>{projDiaBox()});
